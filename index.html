@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝐁𝐈𝐆࿐𝐏𝐑𝐎𝐅𝐈𝐓 ♻️ PREDICTION</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --gold: #FFB800;
+    --gold2: #FF8C00;
+    --dark: #080808;
+    --card-bg: #111111;
+    --card-border: #222222;
+    --green: #00e676;
+    --red: #e60000;
+  }
+
+  body {
+    background: var(--dark);
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background grid */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 90% 50% at 50% -5%, rgba(255,184,0,0.10) 0%, transparent 55%),
+      linear-gradient(rgba(255,184,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,184,0,0.03) 1px, transparent 1px);
+    background-size: auto, 40px 40px, 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Particle stars */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 15% 20%, rgba(255,184,0,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 75% 10%, rgba(255,184,0,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 40% 70%, rgba(255,184,0,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 85% 50%, rgba(255,184,0,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 25% 85%, rgba(255,184,0,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 60% 35%, rgba(255,184,0,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 90% 80%, rgba(255,184,0,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 5% 50%, rgba(255,184,0,0.4) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+    animation: twinkle 4s ease-in-out infinite alternate;
+  }
+  @keyframes twinkle { 0%{opacity:0.4;} 100%{opacity:1;} }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 18px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ── LIVE BADGE ── */
+  .top-badge {
+    background: linear-gradient(90deg, #cc0000, #ff3300);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+    padding: 9px 22px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    animation: pulseBadge 2s ease-in-out infinite;
+    border: 1px solid rgba(255,80,0,0.5);
+  }
+  .top-badge .dot {
+    width: 8px; height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    animation: blinkDot 1s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pulseBadge {
+    0%,100% { box-shadow: 0 0 18px rgba(230,0,0,0.55); }
+    50%      { box-shadow: 0 0 36px rgba(255,50,0,0.9); }
+  }
+  @keyframes blinkDot { 0%,100%{opacity:1;} 50%{opacity:0.15;} }
+
+  /* ── LOGO ── */
+  .logo-ring {
+    position: relative;
+    margin-bottom: 22px;
+  }
+  .logo-ring::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: conic-gradient(var(--gold), var(--gold2), transparent, var(--gold));
+    animation: spinRing 3s linear infinite;
+    z-index: 0;
+  }
+  @keyframes spinRing { to{transform:rotate(360deg);} }
+  .logo-img {
+    position: relative;
+    z-index: 1;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--dark);
+    object-fit: cover;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a1a 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 60px;
+    overflow: hidden;
+    animation: floatLogo 3.5s ease-in-out infinite;
+    box-shadow: 0 0 40px rgba(255,184,0,0.25);
+  }
+  @keyframes floatLogo {
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-7px);}
+  }
+
+  /* ── BRAND ── */
+  .brand-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1;
+    text-shadow: 0 0 40px rgba(255,184,0,0.45), 0 2px 0 rgba(0,0,0,0.8);
+    margin-bottom: 4px;
+  }
+  .brand-sub {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    letter-spacing: 6px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .brand-tagline {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+  }
+
+  /* ── COLOR BALLS ── */
+  .color-row {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  .ball {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    animation: bounceBall 1.5s ease-in-out infinite;
+  }
+  .ball.red    { background:#ff3d3d; box-shadow:0 0 12px #ff3d3d; animation-delay:0s; }
+  .ball.green  { background:#00e676; box-shadow:0 0 12px #00e676; animation-delay:0.2s; }
+  .ball.violet { background:#9c27b0; box-shadow:0 0 12px #9c27b0; animation-delay:0.4s; }
+  .ball.blue   { background:#2196f3; box-shadow:0 0 12px #2196f3; animation-delay:0.6s; }
+  .ball.yellow { background:#FFB800; box-shadow:0 0 12px #FFB800; animation-delay:0.8s; }
+  @keyframes bounceBall {
+    0%,100%{transform:translateY(0) scale(1);}
+    50%{transform:translateY(-8px) scale(1.15);}
+  }
+
+  /* ── JOIN BUTTON ── */
+  .join-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 19px 24px;
+    background: linear-gradient(90deg, var(--gold), var(--gold2));
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 36px rgba(255,184,0,0.50), 0 2px 0 rgba(255,255,255,0.1) inset;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s;
+  }
+  .join-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 55%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+    animation: shimmer 2.2s ease-in-out infinite;
+  }
+  @keyframes shimmer { 0%{left:-100%;} 100%{left:210%;} }
+  .join-btn:active { transform: scale(0.97); }
+
+  .exclusive-tag {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+  }
+  .exclusive-tag span { color: var(--gold); font-weight: 700; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #333, transparent);
+  }
+
+  /* ── CARDS ── */
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--gold);
+    border-radius: 16px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0;
+    animation: fadeUp 0.55s ease both;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 24px rgba(255,184,0,0.12);
+    border-left-color: var(--gold);
+  }
+  .card:nth-child(1){animation-delay:0.1s;}
+  .card:nth-child(2){animation-delay:0.2s;}
+  .card:nth-child(3){animation-delay:0.3s;}
+  .card:nth-child(4){animation-delay:0.4s;}
+  .card:nth-child(5){animation-delay:0.5s;}
+  @keyframes fadeUp {
+    from{opacity:0;transform:translateY(20px);}
+    to{opacity:1;transform:translateY(0);}
+  }
+  .card-icon { font-size: 32px; flex-shrink: 0; }
+  .card-text  { flex: 1; }
+  .card-title { font-size: 16px; font-weight: 700; color: var(--gold); margin-bottom: 2px; }
+  .card-desc  { font-size: 13px; color: #888; font-weight: 500; line-height: 1.45; }
+  .card-check { font-size: 22px; color: var(--green); flex-shrink: 0; font-weight: 700; }
+
+  /* ── STATS ── */
+  .stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .stat-box {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 16px 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .stat-num   { font-family:'Bebas Neue',sans-serif; font-size:28px; color:var(--gold); line-height:1; }
+  .stat-label { font-size:11px; color:#555; font-weight:600; letter-spacing:0.5px; margin-top:5px; text-transform:uppercase; }
+
+  /* ── TESTIMONIAL ── */
+  .testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .testi {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    opacity: 0;
+    animation: fadeUp 0.55s ease both;
+  }
+  .testi:nth-child(1){animation-delay:0.5s;}
+  .testi:nth-child(2){animation-delay:0.6s;}
+  .testi:nth-child(3){animation-delay:0.7s;}
+  .testi-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .testi-name { font-size: 14px; font-weight: 700; color: #ddd; }
+  .testi-stars { color: var(--gold); font-size: 12px; letter-spacing: 2px; }
+  .testi-text { font-size: 13px; color: #777; line-height: 1.45; }
+  .testi-profit { font-size: 13px; color: var(--green); font-weight: 700; }
+
+  /* ── WARNING ── */
+  .warning-box {
+    width: 100%;
+    background: rgba(255,184,0,0.05);
+    border: 1px solid rgba(255,184,0,0.2);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 28px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .warning-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .warning-text { font-size: 12px; color: #777; line-height: 1.6; }
+  .warning-text strong { color: var(--gold); }
+
+  /* ── FOOTER ── */
+  .footer {
+    font-size: 11px;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 16px;
+    line-height: 1.8;
+  }
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '26679411108374911');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26679411108374911&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<div class="wrap">
+
+  <!-- LIVE BADGE -->
+  <div class="top-badge">
+    <div class="dot"></div>
+    PREDICTIONS ACTIVE NOW
+  </div>
+
+  <!-- LOGO -->
+  <div class="logo-ring">
+    <img class="logo-img" src="https://adgrowth7.xyz/wp-content/uploads/2026/05/big-45616.jpg" alt="Big Profit Logo">
+  </div>
+
+  <!-- BRAND -->
+  <div class="brand-name">𝐁𝐈𝐆࿐𝐏𝐑𝐎𝐅𝐈𝐓 ♻️</div>
+  <div class="brand-sub">P R E D I C T I O N</div>
+  <div class="brand-tagline">🏆 Colour Prediction Expert 🏆</div>
+
+  <!-- COLOR BALLS -->
+  <div class="color-row">
+    <div class="ball red"></div>
+    <div class="ball green"></div>
+    <div class="ball violet"></div>
+    <div class="ball blue"></div>
+    <div class="ball yellow"></div>
+  </div>
+
+  <!-- CTA BUTTON -->
+  <a href="https://t.me/+7r7T2amDzc9lNjZl" class="join-btn" target="_blank" onclick="fbq('track', 'Lead');">
+    📲 JOIN TELEGRAM NOW →
+  </a>
+  <div class="exclusive-tag">🔒 Private & Exclusive — <span>Limited Seats Available</span></div>
+
+  <!-- DIVIDER -->
+  <div class="divider">WHY JOIN US</div>
+
+  <!-- FEATURE CARDS -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <div class="card-text">
+        <div class="card-title">100% Accurate Predictions</div>
+        <div class="card-desc">Verified & tested colour calls only — no guesswork</div>
+      </div>
+      <div class="card-check">✓</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <div class="card-text">
+        <div class="card-title">Real-Time Signals</div>
+        <div class="card-desc">Instant alerts sent before every round starts</div>
+      </div>
+      <div class="card-check">✓</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">💰</div>
+      <div class="card-text">
+        <div class="card-title">Daily Earning Tips</div>
+        <div class="card-desc">Win Big · Wingo · TRX · K3 — full coverage</div>
+      </div>
+      <div class="card-check">✓</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔐</div>
+      <div class="card-text">
+        <div class="card-title">Private & Exclusive</div>
+        <div class="card-desc">Limited members — join before it closes forever</div>
+      </div>
+      <div class="card-check">✓</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <div class="card-text">
+        <div class="card-title">24/7 Expert Support</div>
+        <div class="card-desc">Our team is always online to guide every step</div>
+      </div>
+      <div class="card-check">✓</div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat-box">
+      <div class="stat-num">10K+</div>
+      <div class="stat-label">Members</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">95%</div>
+      <div class="stat-label">Accuracy</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">Daily</div>
+      <div class="stat-label">Signals</div>
+    </div>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="divider">MEMBER RESULTS</div>
+
+  <!-- TESTIMONIALS -->
+  <div class="testimonials">
+    <div class="testi">
+      <div class="testi-top">
+        <div class="testi-name">Rahul M. · Mumbai</div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-text">Best prediction channel I've found. Signals come on time every single day!</div>
+      <div class="testi-profit">+₹18,400 this week 🔥</div>
+    </div>
+    <div class="testi">
+      <div class="testi-top">
+        <div class="testi-name">Priya S. · Delhi</div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-text">I was skeptical at first but JAICLUB proved me wrong. 100% legit.</div>
+      <div class="testi-profit">+₹9,800 this week 💰</div>
+    </div>
+    <div class="testi">
+      <div class="testi-top">
+        <div class="testi-name">Arjun K. · Bangalore</div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-text">Accurate predictions, no fake promises. The support team is super helpful too.</div>
+      <div class="testi-profit">+₹22,500 this month 🚀</div>
+    </div>
+  </div>
+
+  <!-- SECOND CTA -->
+  <a href="https://t.me/+7r7T2amDzc9lNjZl" class="join-btn" target="_blank" onclick="fbq('track', 'Lead');">
+    📲 JOIN TELEGRAM NOW →
+  </a>
+  <div class="exclusive-tag" style="margin-top:10px;">⚠️ Only <span>47 seats</span> left — don't miss out!</div>
+
+  <!-- DISCLAIMER -->
+  <div class="warning-box">
+    <div class="warning-icon">⚠️</div>
+    <div class="warning-text">
+      <strong>Disclaimer:</strong> Colour prediction involves financial risk. Only invest what you can afford to lose. Past results are not a guarantee of future performance. Play responsibly.
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2026 𝐁𝐈𝐆࿐𝐏𝐑𝐎𝐅𝐈𝐓 ♻️ PREDICTION<br>
+    All Rights Reserved · Made with ❤️
+  </div>
+
+</div>
+</body>
+</html>
